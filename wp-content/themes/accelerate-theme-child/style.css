@@ -10,6 +10,7 @@ Tags:     	light, dark, two-columns, right-sidebar, responsive-layout, accessibi
 Text Domain:  accelerate-theme-child
 */
 /*HOME PAGE STYLES*/
+
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
 }
@@ -21,7 +22,7 @@ Text Domain:  accelerate-theme-child
 .button {
 	background: #45ac9d;
 }
-
+ /*Blog Post Subsection*/
 .blog-post {
 	width: 50%;
 	float: left;
@@ -44,4 +45,117 @@ Text Domain:  accelerate-theme-child
 	font-weight: 700;
 	color: #45ac9d;
 	text-transform: uppercase;
+}
+
+/*Featured Work Subsection*/
+
+.featured-work div{
+  flex-flow: row wrap;
+}
+
+.featured-work h2{
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+
+.homepage-featured-work{
+  list-style: none;
+  margin-left: 0;
+  margin-top: 3em;
+  margin-bottom: 4em;
+  display: inline-flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.individual-featured-work h3{
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+
+/*CASE STUDY STYLES*/
+
+
+.case-study-sidebar{
+  float: left;
+  clear: both;
+  max-width: 32%;
+}
+
+.case-study-sidebar h2{
+  color: #000000;
+  font: 600 1.5em 'Open Sans', Arial, sans-serif;
+}
+
+.case-study-sidebar h4{
+  color: #a6a6a6;
+  font: 400 .9em/1 'Montserrat', 'Open Sans', Arial, sans-serif;
+  margin-top: 15px;
+}
+
+.case-study-sidebar h4 span{
+  color: #000000;
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+.image-block{
+  float: right;
+  max-width: 65%;
+}
+
+.image-block img{
+  max-width: 512px;
+  margin: 50px 25px 0 50px;
+}
+
+/* CASE STUDY ARCHIVE */
+
+div.image-block img {
+	width: 100%;
+	height: auto;
+}
+
+/* NEXT-PREV STYLES */
+
+#navigation {
+	background: #fff;
+	border-top: solid #bfbfbf;
+	border-width: 1px 0;
+	clear: both;
+	font: .8em/4.08 'OpenSans', Arial, sans-serif;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	text-align: center;
+  margin-top: 1em;
+}
+
+/*FOOTER STYLES*/
+
+.menu-social-media-nav-container{
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+.social-media-menu{
+  display: inline-flex;
+  flex-flow: row nowrap;
+  list-style: none;
+  justify-content: flex-end;
+}
+.social-icon{
+  height: 30px;
+  width: 30px;
+  background-color: #000000;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 4px;
+  margin-left: 10px;
+}
+.icon-2x{
+  color: #ffffff;
+  font-size: 1.2em !important;
 }
