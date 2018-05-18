@@ -136,15 +136,9 @@ div.image-block img {
 
 /*FOOTER STYLES*/
 
-.menu-social-media-nav-container{
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-}
-.social-media-menu{
-  display: inline-flex;
-  flex-flow: row nowrap;
-  list-style: none;
-  justify-content: flex-end;
+.social-media-menu {
+    list-style: none;
+    text-align: right;
 }
 .social-icon{
   height: 30px;
@@ -154,6 +148,7 @@ div.image-block img {
   text-align: center;
   padding-top: 4px;
   margin-left: 10px;
+  display: inline-block;
 }
 .icon-2x{
   color: #ffffff;
