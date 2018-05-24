@@ -9,6 +9,7 @@ Version:      2.0.0
 Tags:     	light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
 Text Domain:  accelerate-theme-child
 */
+
 /*HOME PAGE STYLES*/
 
 .home-page {
@@ -22,10 +23,10 @@ Text Domain:  accelerate-theme-child
 .button {
 	background: #45ac9d;
 }
+
  /*Blog Post Subsection*/
 .blog-post {
-	width: 50%;
-	float: left;
+	width: 100%;
 	margin-bottom: 2em;
 }
 
@@ -34,10 +35,16 @@ Text Domain:  accelerate-theme-child
     color: #a6a6a6;
     text-transform: uppercase;
     margin: 2em 0 .5em;
+    text-align: center;
 }
 
 .blog-post h3 {
 	font-size: 1.5em;
+  text-align: center;
+}
+
+.blog-post p{
+  text-align: justify;
 }
 
 .read-more-link {
@@ -50,7 +57,16 @@ Text Domain:  accelerate-theme-child
 /*Featured Work Subsection*/
 
 .featured-work div{
-  flex-flow: row wrap;
+  display: block;
+}
+
+.homepage-featured-work{
+  list-style: none;
+  margin-left: 0;
+  margin-top: 3em;
+  margin-bottom: 4em;
+  width: 100%;
+  text-align: center;
 }
 
 .featured-work h2{
@@ -59,31 +75,17 @@ Text Domain:  accelerate-theme-child
   text-align: center;
 }
 
-.homepage-featured-work{
-  list-style: none;
-  margin-left: 0;
-  margin-top: 3em;
-  margin-bottom: 4em;
-  display: inline-flex;
-  flex-flow: row wrap;
-  width: 100%;
-  justify-content: space-between;
+.individual-featured-work{
+  margin-top: 2.5em;
 }
-
 .individual-featured-work h3{
-  text-align: center;
-  margin-top: 1.5em;
+  margin-top: .5em;
 }
 
 
 /*CASE STUDY STYLES*/
 
 
-.case-study-sidebar{
-  float: left;
-  clear: both;
-  max-width: 32%;
-}
 
 .case-study-sidebar h2{
   color: #000000;
@@ -102,14 +104,9 @@ Text Domain:  accelerate-theme-child
   font-size: 1em;
 }
 
-.image-block{
-  float: right;
-  max-width: 65%;
-}
 
 .image-block img{
-  max-width: 512px;
-  margin: 50px 25px 0 50px;
+  margin: 50px 0px;
 }
 
 /* CASE STUDY ARCHIVE */
@@ -133,12 +130,39 @@ div.image-block img {
 	text-align: center;
   margin-top: 1em;
 }
+/* CONTACT FORM STYLES*/
+
+.nf-form-fields-required, .ninja-forms-req-symbol{
+  display: none;
+}
+
+.nf-field-label label{
+  font-size: .9em;
+}
+
+#nf-field-1-container{
+  min-width: 100%;
+  float: left;
+  clear: both;
+}
+
+#nf-field-2-container{
+  min-width: 100%;
+  float: left;
+  clear: both;
+}
+
+input[type="button"],
+input[type="submit"] {
+	background: #45ac9d;
+}
 
 /*FOOTER STYLES*/
 
 .social-media-menu {
     list-style: none;
-    text-align: right;
+    text-align: left;
+    margin-left: 0;
 }
 .social-icon{
   height: 30px;
@@ -150,7 +174,311 @@ div.image-block img {
   margin-left: 10px;
   display: inline-block;
 }
+
+.social-icon:first-child{
+  margin-left: 0;
+}
 .icon-2x{
   color: #ffffff;
   font-size: 1.2em !important;
+}
+
+/*ABOUT PAGE STYLES*/
+
+#about-hero-container{
+  position: relative;
+  text-align: center;
+}
+
+.custom-page-header-text{
+  margin: 25px 10% 0px 10%;
+  text-align: center;
+}
+
+.custom-page-header-text p{
+  font-weight: 700;
+  font-size: .9em;
+}
+
+#about-container{
+  text-align: justify;
+}
+
+#about-container h4{
+  text-transform: uppercase;
+  font-size: .7em;
+  text-align: center;
+}
+
+#service-pre-pitch{
+  text-align: center;
+}
+
+.service-block{
+  margin-top: 35px;
+  border-top: 1px solid #bfbfbf;
+}
+
+.service-block figure, .service-block h3{
+  text-align: center;
+}
+
+.service-block figure{
+  padding-top: 35px;
+}
+
+.service-block img{
+  max-width: 60%;
+  height: auto;
+}
+
+.service-block h3{
+  margin-top: 25px;
+}
+
+.work-with-us{
+  border-top: 1px solid #bfbfbf;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.work-with-us h3{
+  margin: 35px 0 15px 0;
+}
+
+.work-with-us div{
+  margin-top: 30px;
+}
+
+/* ALERT PAGE STYLES */
+
+.alert-page {
+  background-image: no-repeat center center fixed;
+}
+
+.alert-container {
+  clear: none !important;
+}
+
+
+/*MEDIA CALLS*/
+
+
+@media (min-width: 740px) {
+/*Footer Desktop Styles*/
+
+.site-description{
+  max-width: 70%;
+  margin-right: 5%;
+  float:left;
+  clear: none;
+}
+.social-media-menu {
+    list-style: none;
+    text-align: right;
+}
+/*Blog Subsection Desktop Styles*/
+.blog-post {
+	width: 50%;
+	float: left;
+	margin-bottom: 2em;
+}
+
+.blog-post h4, .blog-post h3, .blog-post p {
+    text-align: left;
+}
+
+/*Featured Work Desktop Styles*/
+
+.featured-work{
+  text-align: center;
+}
+.homepage-featured-work{
+  list-style: none;
+  margin-left: 0;
+  margin-top: 3em;
+  margin-bottom: 4em;
+  text-align: left;
+  width: 100%;
+}
+
+.individual-featured-work{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 1em;
+  margin-left: 4.25%;
+  max-width: 30%;
+  text-align: center;
+}
+
+.individual-featured-work:first-of-type{
+  margin-left: 0;
+}
+
+/*Case Study Desktop Styles*/
+  .case-study-sidebar{
+    float: left;
+    clear: both;
+    max-width: 32%;
+  }
+  .image-block{
+    float: right;
+    max-width: 65%;
+  }
+  .image-block img{
+    max-width: 512px;
+    margin: 50px 25px 0 50px;
+  }
+
+/*Contact Desktop Styles*/
+  .contact h2, .contact p, #nf-form-1-cont{
+    max-width: 700px;
+    margin-left: 18%;
+    margin-right: 18%;
+  }
+
+  .contact p{
+    margin-top: 17px;
+    margin-bottom: 17px;
+  }
+  #nf-field-1-container{
+    min-width: 45%;
+    max-width: 48%;
+    margin-right: 3%;
+    float: left;
+    clear: none;
+  }
+
+  #nf-field-2-container{
+    min-width: 45%;
+    max-width: 48%;
+    float: right;
+    clear: none;
+  }
+
+  #nf-field-4{
+    float:right;
+
+  }
+
+/*About Page Desktop Styles*/
+
+  #about-hero-container{
+    max-height: 320px;
+    overflow: hidden;
+  }
+
+  #about_hero_image{
+    max-height: 100%;
+  }
+
+  #about_hero_image img{
+  /* corrects inline gap in enclosing div */
+  display: block;
+  max-width: 100%;
+  }
+
+  .custom-page-header-text{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      text-align: center;
+  }
+
+  .custom-page-header-text p{
+    font: 700 1.25em/1.75 'Montserrat', 'OpenSans', Arial, sans-serif;
+  	letter-spacing: -0.034em;
+    color: #ffffff;
+  }
+
+  #about-container{
+    text-align: left;
+  }
+
+  #about-container h4{
+    text-transform: uppercase;
+    font-size: .8em;
+    text-align: center;
+  }
+
+  #service-pre-pitch{
+    text-align: center;
+  }
+
+  .service-block{
+    display: inline-block;
+    margin-top: 70px;
+    border-top: none;
+    vertical-align: middle;
+  }
+
+  #icon-1, #service-2-text, #icon-3, #service-4-text{
+    float: left;
+  }
+
+  #icon-1, #icon-3{
+    max-width: 30%;
+  }
+
+  #service-2-text, #service-4-text{
+    max-width: 65%;
+    margin-right: 5%;
+  }
+
+  #icon-2, #icon-4{
+    max-width: 30%;
+  }
+
+  #service-1-text, #service-3-text{
+    max-width: 65%;
+    margin-left: 5%;
+  }
+
+  #icon-2, #service-1-text, #icon-4, #service-3-text{
+    float: right;
+  }
+
+  .service-block figure, .service-block h3{
+    text-align: left;
+  }
+
+  .service-block figure{
+    padding-top: 0;
+    margin-top: 10px;
+    max-height: 216px;
+    max-width: 216px;
+  }
+
+  .service-block img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .service-block h3{
+    margin-top: 10px;
+  }
+
+  .work-with-us{
+    width: 100%;
+    display: inline-block;
+    border-top: 1px solid #bfbfbf;
+    margin-top: 70px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .work-with-us h3{
+    margin: 35px 0 0 10%;
+    float:left;
+    width: 38%;
+    text-align: left;
+  }
+
+  .work-with-us div{
+    margin: 37px 10% 0 0;
+    float: right;
+  }
+
 }

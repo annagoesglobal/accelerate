@@ -28,5 +28,30 @@ function create_custom_post_types() {
             'rewrite' => array( 'slug' => 'case-studies' ),
         )
     );
+		register_post_type( 'notification_pages',
+        array(
+            'labels' => array(
+                'name' => __( 'Notification Pages' ),
+                'singular_name' => __( 'Notification Page' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array( 'slug' => 'alert' ),
+        )
+    );
 }
 add_action( 'init', 'create_custom_post_types' );
+
+add_filter( 'body_class', 'accelerate_child_body_classes' );
+function accelerate_child_body_classes( $classes ) {
+
+if (is_page('contact-us') ) {
+$classes[] = 'contact';
+}
+if (is_page('about')){
+$classes[] = 'about';	
+}
+
+return $classes;
+
+}
