@@ -265,18 +265,6 @@ input[type="submit"] {
 
 
 @media (min-width: 740px) {
-/*Footer Desktop Styles*/
-
-.site-description{
-  max-width: 70%;
-  margin-right: 5%;
-  float:left;
-  clear: none;
-}
-.social-media-menu {
-    list-style: none;
-    text-align: right;
-}
 /*Blog Subsection Desktop Styles*/
 .blog-post {
 	width: 50%;
@@ -480,5 +468,20 @@ input[type="submit"] {
     margin: 37px 10% 0 0;
     float: right;
   }
+  /*Footer Desktop Styles*/
 
+  .site-description{
+    max-width: 70%;
+    margin-right: 5%;
+    float:left;
+    clear: none;
+  }
+
+  .site-description p{
+    margin-left: 0;
+  }
+  .social-media-menu {
+      list-style: none;
+      text-align: right;
+  }
 }
