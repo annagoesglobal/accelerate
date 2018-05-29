@@ -54,6 +54,13 @@ get_header(); ?>
   		<?php endwhile; ?>
 			<?php wp_reset_query(); ?>
  </div>
+ <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+	<div id="secondary" class="widget-area" role="complementary">
+		<h4>Recent News</h4>
+		<?php dynamic_sidebar( 'sidebar-2' ); ?>
+		<a href="https://twitter.com/alhaefele" class="follow-button">Follow Us ›</a>
+	</div>
+<?php endif; ?>
  </div>
 </section>
 

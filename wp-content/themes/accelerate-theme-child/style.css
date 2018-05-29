@@ -48,10 +48,57 @@ Text Domain:  accelerate-theme-child
 }
 
 .read-more-link {
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
 	font-weight: 700;
 	color: #45ac9d;
 	text-transform: uppercase;
+}
+
+/*Twitter Subsection*/
+
+#secondary{
+  text-align: justify;
+  display: block;
+}
+
+#secondary h4{
+  text-transform: uppercase;
+  color: #a6a6a6;
+  font-size: 1em;
+  text-align: center;
+}
+
+#secondary h3{
+  text-transform: none;
+  color: #3b3b3b;
+  font-size: 1.5em;
+  text-align: center;
+}
+#secondary ul{
+  list-style: none;
+  text-align: justify;
+  margin: 0;
+}
+
+.stt-em{
+  visibility: hidden;
+}
+
+.follow-button {
+	font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
+	font-weight: 700;
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+
+/*Newsletter Subsection*/
+
+.mc4wp-form-fields input[type="button"], input[type="submit"]{
+  padding-bottom: 1.8em;
+}
+
+.mc4wp-form-fields input{
+  width: 100%;
 }
 
 /*Featured Work Subsection*/
@@ -185,19 +232,20 @@ input[type="submit"] {
 
 /*ABOUT PAGE STYLES*/
 
-#about-hero-container{
-  position: relative;
-  text-align: center;
+.about-hero-container{
+background: url("img/taxi-photo-about.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+padding: 50px 0 50px 0;
 }
 
 .custom-page-header-text{
-  margin: 25px 10% 0px 10%;
+  margin: 0 25% 0 25%;
   text-align: center;
 }
 
 .custom-page-header-text p{
   font-weight: 700;
   font-size: .9em;
+  color: #ffffff;
 }
 
 #about-container{
@@ -250,6 +298,38 @@ input[type="submit"] {
   margin-top: 30px;
 }
 
+/*404 PAGE STYLES*/
+
+.error404 .site-main{
+  height: 100%;
+  background: url("img/detour-dog.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 10% 0% 30% 0%;
+}
+
+.text-404{
+  max-width: 80%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 3%;
+  margin-left: 10%;
+
+}
+
+.text-404 h1{
+  line-height: 1.5em;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.return-button{
+  margin-bottom: 22px;
+}
+
 /* ALERT PAGE STYLES */
 
 .alert-page {
@@ -266,6 +346,7 @@ input[type="submit"] {
 
 @media (min-width: 740px) {
 /*Blog Subsection Desktop Styles*/
+
 .blog-post {
 	width: 50%;
 	float: left;
@@ -274,6 +355,28 @@ input[type="submit"] {
 
 .blog-post h4, .blog-post h3, .blog-post p {
     text-align: left;
+}
+
+/*Twitter Subsection Desktop Styles*/
+
+#secondary{
+  text-align: left;
+  margin-right: 0;
+  margin-left: 0;
+  display: block;
+  float: right;
+  max-width: 40%;
+  clear:none;
+}
+
+#secondary ul{
+  list-style: none;
+  text-align: left;
+  margin: 0;
+}
+
+#secondary h3, #secondary h4{
+  text-align: left;
 }
 
 /*Featured Work Desktop Styles*/
@@ -351,27 +454,12 @@ input[type="submit"] {
 
 /*About Page Desktop Styles*/
 
-  #about-hero-container{
-    max-height: 320px;
-    overflow: hidden;
-  }
-
-  #about_hero_image{
-    max-height: 100%;
-  }
-
-  #about_hero_image img{
-  /* corrects inline gap in enclosing div */
-  display: block;
-  max-width: 100%;
+  .about-hero-container{
+  background: url("img/taxi-photo-about.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+  padding: 110px 0 110px 0;
   }
 
   .custom-page-header-text{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      margin: 0;
       text-align: center;
   }
 
@@ -383,6 +471,7 @@ input[type="submit"] {
 
   #about-container{
     text-align: left;
+    width: 100%;
   }
 
   #about-container h4{
@@ -467,6 +556,11 @@ input[type="submit"] {
   .work-with-us div{
     margin: 37px 10% 0 0;
     float: right;
+  }
+  /*404 Page Desktop Styles*/
+  .text-404{
+    max-width: 40%;
+    margin-left: 10%;
   }
   /*Footer Desktop Styles*/
 
